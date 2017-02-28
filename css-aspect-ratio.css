@@ -1,0 +1,47 @@
+/*  Copyright 2017 Google Inc.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+*/
+
+.aspect-ratio {
+  /* aspect-ratio custom properties */
+  /* The width portion of the aspect ratio, e.g. 16 in 16:9. */
+  --aspect-ratio-w: 1;
+  /* The height portion of the aspect ratio, e.g. 9 in 16:9. */
+  --aspect-ratio-h: 1;
+
+  position: relative;
+}
+
+.aspect-ratio > *:first-child {
+  width: 100%;
+}
+
+@supports (--custom-props: "true") {
+  .aspect-ratio::before {
+    display: block;
+    padding-top: calc(var(--aspect-ratio-h, 1) /
+        var(--aspect-ratio-w, 1) * 100%);
+    content: "";
+  }
+
+  .aspect-ratio > *:first-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
