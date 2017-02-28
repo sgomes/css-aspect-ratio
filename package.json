@@ -1,0 +1,13 @@
+{
+  "name": "css-aspect-ratio",
+  "version": "1.0.0",
+  "description": "Simple implementation of fixed aspect ratio in pure CSS",
+  "style": "css-aspect-ratio.css",
+  "keywords": ["css", "aspect ratio"],
+  "author": "sgomes",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sgomes/css-aspect-ratio.git"
+  },
+  "license": "Apache-2.0"
+}
