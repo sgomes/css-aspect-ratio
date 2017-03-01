@@ -61,7 +61,7 @@ In plain CSS, make sure you use a bundler or build tool to copy dependencies. To
 You can also use unpkg as a CDN:
 
 ```css
-@import https://unpkg.com/css-aspect-ratio@1.0.0/css-aspect-ratio.css;
+@import https://unpkg.com/css-aspect-ratio@1/css-aspect-ratio.css;
 ```
 
 
