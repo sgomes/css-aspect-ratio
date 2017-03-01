@@ -27,6 +27,44 @@ ensuring that the aspect ratio is maintained even if the image is resized.
 It's also generic enough to be applied to any block, not just images.
 
 
+## Install
+
+```sh
+npm i --save-dev css-aspect-ratio
+```
+
+
+## Import
+
+### Sass
+
+In Sass, first make sure `node_modules` is in your `includePaths`. Then:
+
+```scss
+@import "css-aspect-ratio/css-aspect-ratio";
+```
+
+### Less
+
+In Less, install `less-plugin-npm-import` and do:
+
+```less
+@import (inline) "npm://css-aspect-ratio/css-aspect-ratio.css";
+```
+
+### Plain CSS
+
+In plain CSS, make sure you use a bundler or build tool to copy dependencies. To import:
+
+`@import /path/to/css-aspect-ratio.css;`
+
+You can also use unpkg as a CDN:
+
+```css
+@import https://unpkg.com/css-aspect-ratio@1.0.0/css-aspect-ratio.css;
+```
+
+
 ## Usage
 
 In HTML:
@@ -47,4 +85,6 @@ In HTML:
 ## Progressive enhancement
 
 CSS Aspect Ratio works as progressive enhancement, leaving the resizing entirely to the browser
-if custom properties are not supported.
+if custom properties are not supported. This means that aspect ratio will be preserved, but
+vertical space will not be allocated ahead of time, resulting in content shifting down during
+load.
