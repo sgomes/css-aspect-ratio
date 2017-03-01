@@ -79,12 +79,12 @@ In HTML:
 
 `aspect-ratio` takes two custom properties:
 - `--aspect-ratio-w` defines the width portion of the aspect ratio, e.g. 16 in 16:9.
-- `--aspect-ratio-h` defines the height portion of the aspect ratio, e.g. 16 in 16:9.
+- `--aspect-ratio-h` defines the height portion of the aspect ratio, e.g. 9 in 16:9.
 
 
 ## Progressive enhancement
 
 CSS Aspect Ratio works as progressive enhancement, leaving the resizing entirely to the browser
-if custom properties are not supported. This means that aspect ratio will be preserved, but
-vertical space will not be allocated ahead of time, resulting in content shifting down during
-load.
+if custom properties are not supported. This means that for things like images, aspect ratio will
+be preserved, but vertical space will not be allocated ahead of time, resulting in content
+shifting down during load.
