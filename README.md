@@ -3,8 +3,11 @@
 This package provides a simple implementation of fixed aspect ratio in pure CSS.
 It requires support for [CSS Custom Properties](https://www.w3.org/TR/css-variables-1/).
 
-Original implementation adapted from
+Modular implementation approach adapted from
 https://sgom.es/posts/2017-02-17-css-custom-properties-as-your-api/
+
+CSS-only aspect ratio trick adapted from
+https://alistapart.com/article/creating-intrinsic-ratios-for-video
 
 
 ## Rationale / background

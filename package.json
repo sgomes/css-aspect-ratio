@@ -1,6 +1,6 @@
 {
   "name": "css-aspect-ratio",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple implementation of fixed aspect ratio in pure CSS",
   "style": "css-aspect-ratio.css",
   "keywords": ["css", "aspect ratio"],
