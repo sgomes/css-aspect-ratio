@@ -1,5 +1,7 @@
 # CSS Aspect Ratio
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/sgomes/css-aspect-ratio.svg)](https://greenkeeper.io/)
+
 This package provides a simple implementation of fixed aspect ratio in pure CSS.
 It requires support for [CSS Custom Properties](https://www.w3.org/TR/css-variables-1/).
 
